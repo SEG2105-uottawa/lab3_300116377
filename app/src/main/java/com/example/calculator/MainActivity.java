@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private double data01,date02;
-    private enum Operator{none, add,sub,mul, eq, div,remainder}
+    private enum Operator{none, add,sub,mul, eq, div,remainder,pow}
     private Operator operator=Operator.none;
     private boolean haveDot=false;
     private  boolean requireCleaning=false;
@@ -125,6 +125,9 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.clear:
                     operator=Operator.none;
                     break;
+                case R.id.pow:
+                    operator=Operator.pow;
+                    break;
             }
         }else {
             double result=0;
@@ -149,6 +152,10 @@ public class MainActivity extends AppCompatActivity {
                 case remainder:
                     result=data01%date02;
                     break;
+                case pow:
+                    result=Math.pow(data01,date02);
+                    break;
+               
             }
             data01=result;
             operator=Operator.none;
