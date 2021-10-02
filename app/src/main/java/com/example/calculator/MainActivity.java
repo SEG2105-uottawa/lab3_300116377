@@ -40,24 +40,34 @@ public class MainActivity extends AppCompatActivity {
         switch (process){
             case R.id.zero:
                 cur.setText(cur.getText()+"0");
+                break;
             case R.id.one:
                 cur.setText(cur.getText()+"1");
+                break;
             case R.id.two:
                 cur.setText(cur.getText()+"2");
+                break;
             case R.id.three:
                 cur.setText(cur.getText()+"3");
+                break;
             case R.id.four:
                 cur.setText(cur.getText()+"4");
+                break;
             case R.id.five:
                 cur.setText(cur.getText()+"5");
+                break;
             case R.id.six:
                 cur.setText(cur.getText()+"6");
+                break;
             case R.id.seven:
                 cur.setText(cur.getText()+"7");
+                break;
             case R.id.eight:
                 cur.setText(cur.getText()+"8");
+                break;
             case R.id.nine:
                 cur.setText(cur.getText()+"9");
+                break;
             case R.id.dot:
                 if(!haveDot){
                     cur.setText(cur.getText()+".");
